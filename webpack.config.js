@@ -1,8 +1,10 @@
 const path = require("path");
-// const mode =
-//   process.env.NODE_ENV == "production" ? "production" : "development";
+
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const MiniCssExtractLoader = require("mini-css-extract-plugin");
+const {InjectManifest} = require('workbox-webpack-plugin');
+
 
 module.exports = {
   mode: "development",
@@ -13,7 +15,20 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
 
-  plugins: [new MiniCssExtractLoader()],
+  plugins: [
+    new MiniCssExtractLoader(),
+
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      inject: "head" || false,
+    }),
+
+    new InjectManifest({
+      swSrc: './src/src-sw.js',
+      swDest:'sw.js',
+      maximumFileSizeToCacheInBytes:10 * 1024 * 1024
+    })
+  ],
 
   module: {
     rules: [

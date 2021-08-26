@@ -1,3 +1,6 @@
+import "flickity/dist/flickity.min.css";
+import Flickity from "flickity";
+
 export const Carousel = (data, carouselId, dataFlickity, itemComponent) => {
   const createCarouselItems = () => {
     let items = "";
@@ -13,6 +16,5 @@ export const Carousel = (data, carouselId, dataFlickity, itemComponent) => {
 
   var elem = document.querySelector(carouselId);
   elem.innerHTML = createCarouselItems();
-
   new Flickity(elem, dataFlickity);
 };
