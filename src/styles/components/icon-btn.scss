@@ -1,0 +1,21 @@
+@use '../globals/colors.scss' as *;
+
+.icon-btn {
+  border-radius: 100%;
+  /* padding: 5px; */
+  margin: 5px;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  border-style: none;
+  background: transparent;
+  color: $icon-btn;
+}
+
+.icon-btn:hover {
+  background-color: $icon-btn-hover;
+}
+
+.icon-btn:active {
+  background-color: $icon-btn-active;
+}

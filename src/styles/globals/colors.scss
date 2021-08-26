@@ -1,0 +1,21 @@
+:root {
+  --black: hsl(0, 0%, 0%);
+  --dark-blue: rgb(22, 31, 47);
+  --font-color-primary: white;
+  --font-color-secondary: rgb(199, 199, 199);
+  --search-input-bg: rgb(44, 52, 67);
+  --search-input-font-color: rgb(142, 147, 154);
+  --icon-btn: rgb(142, 147, 154);
+  --icon-btn-hover: rgb(57, 66, 85);
+  --icon-btn-active: rgb(43, 53, 75);
+}
+
+$black: var(--black);
+$dark-blue: var(--dark-blue);
+$font-color-primary: var(--font-color-primary);
+$font-color-secondary: var(--font-color-secondary);
+$search-input-bg: var(--search-input-bg);
+$search-input-font-color: var(--search-input-font-color);
+$icon-btn: var(--icon-btn);
+$icon-btn-hover: var(--icon-btn-hover);
+$icon-btn-active: var(--icon-btn-active);

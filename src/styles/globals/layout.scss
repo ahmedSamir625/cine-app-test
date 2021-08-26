@@ -1,0 +1,59 @@
+@use "colors.scss" as *;
+@use 'fonts.scss' as *;
+
+body {
+    background-color: var(--black);
+    font-family: $roboto, sans-serif;
+    color: $font-color-primary;
+}
+
+img {
+    display: block;
+    height: 250px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+}
+
+.col {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(156, 156, 156);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #585858;
+}
+
+.logo-img {
+    width: 70px;
+}
+
+.navbar-bg {
+    background-color: $dark-blue;
+}
+
+.img-detailed {
+    height: 500px !important;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.3)));
+}
+
+.dropdown ul{
+    background-color: white ;
+}

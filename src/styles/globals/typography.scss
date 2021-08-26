@@ -1,0 +1,22 @@
+@use "colors.scss" as *;
+@use "fonts.scss" as *;
+
+h1 {
+    font-family: $roboto-bold;
+}
+
+h3 {
+    color: $font-color-primary;
+    font-weight: 500;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: $font-color-primary;
+}
+
+a:hover {
+    color: $font-color-secondary;
+}

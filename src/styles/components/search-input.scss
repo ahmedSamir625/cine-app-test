@@ -1,0 +1,22 @@
+@use '../globals/colors.scss' as *;
+
+.search-input-container {
+    color: $search-input-font-color;
+    display: inherit;
+    align-items: center;
+    padding: 0px 15px 0px 10px;
+    background-color: $search-input-bg;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.search-input {
+    background-color: $search-input-bg;
+    color: $search-input-font-color;
+    border-style: none;
+    outline: none;
+    height: 100%;
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
